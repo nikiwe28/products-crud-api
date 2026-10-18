@@ -11,7 +11,7 @@ app.use(cors());           // lets the HTML page call the API from any origin
 app.use(express.json());   // parse JSON request bodies
 
 // Serve the frontend too, so one deployment hosts both
-app.use(express.static(path.join(__dirname, '..', 'frontend')));
+app.use(express.static(path.join(__dirname, 'frontend')));
 
 // ---- helpers ----
 function validate(body) {
